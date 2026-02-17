@@ -76,27 +76,30 @@
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="nav scrolled" id="nav">
-        <div class="nav-container">
-            <a href="../index.html" class="nav-logo">
-                <span class="logo-made">made</span><span class="logo-by">by</span><span class="logo-dot">.</span><span
-                    class="logo-agency">agency</span>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-inner">
+            <a href="../index.html" class="header-logo">
+                <img src="../img/logo.png" alt="MADEby" class="logo-img">
             </a>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+            <button class="burger" id="burger" aria-label="Menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="../index.html#about">O nas</a></li>
-                <li><a href="../index.html#services">Usługi</a></li>
-                <li><a href="../index.html#portfolio">Portfolio</a></li>
-                <li><a href="./">Blog</a></li>
-                <li><a href="../index.html#contact" class="nav-cta">Kontakt</a></li>
-            </ul>
         </div>
-    </nav>
+    </header>
+
+    <!-- Fullscreen Menu Overlay -->
+    <div class="menu-overlay" id="menuOverlay">
+        <nav class="menu-nav">
+            <a href="../index.html" class="menu-link">HOME</a>
+            <a href="../index.html#about" class="menu-link">O NAS</a>
+            <a href="./" class="menu-link">BLOG</a>
+            <a href="../index.html#case" class="menu-link">CASE</a>
+            <a href="../index.html#contact" class="menu-link">KONTAKT</a>
+        </nav>
+    </div>
 
     <div class="container">
         <div class="blog-page-header">
@@ -156,37 +159,38 @@
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="footer">
+    <!-- Footer (Yellow Section) -->
+    <section class="footer-section">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <a href="../index.html" class="nav-logo">
-                        <span class="logo-made">made</span><span class="logo-by">by</span><span
-                            class="logo-dot">.</span><span class="logo-agency">agency</span>
-                    </a>
-                    <p>Tworzymy cyfrowe doświadczenia, które inspirują.</p>
+            <div class="newsletter">
+                <h2 class="newsletter-title">BĄDŹ NA BIEŻĄCO</h2>
+                <p class="newsletter-desc">Zapisz się do naszego newslettera i otrzymuj najnowsze artykuły, case studies
+                    i inspiracje.</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Twój email" required>
+                    <button type="submit">ZAPISZ SIĘ</button>
+                </form>
+            </div>
+            <div class="footer-contact">
+                <div class="footer-contact-col">
+                    <h3>KONTAKT</h3>
+                    <a href="mailto:hello@madeby.agency">hello@madeby.agency</a>
+                    <a href="tel:+48000000000">+48 000 000 000</a>
                 </div>
-                <div class="footer-links">
-                    <div class="footer-col">
-                        <h4>Nawigacja</h4>
-                        <a href="../index.html#about">O nas</a>
-                        <a href="../index.html#services">Usługi</a>
-                        <a href="../index.html#portfolio">Portfolio</a>
-                        <a href="./">Blog</a>
-                    </div>
-                    <div class="footer-col">
-                        <h4>Kontakt</h4>
-                        <a href="mailto:hello@madeby.agency">hello@madeby.agency</a>
-                        <a href="tel:+48000000000">+48 000 000 000</a>
+                <div class="footer-contact-col">
+                    <h3>SOCIAL</h3>
+                    <div class="social-links">
+                        <a href="#">Instagram</a>
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Behance</a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 madeby.agency. Wszystkie prawa zastrzeżone.</p>
+                <p>&copy; 2026 MADEby.agency. Wszystkie prawa zastrzeżone.</p>
             </div>
         </div>
-    </footer>
+    </section>
 
     <script src="../js/main.js"></script>
 </body>

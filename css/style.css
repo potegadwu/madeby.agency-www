@@ -138,8 +138,9 @@ img {
     background: var(--color-dark);
     z-index: 999;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    padding-top: 120px;
     opacity: 0;
     visibility: hidden;
     transition: all 0.4s ease;
