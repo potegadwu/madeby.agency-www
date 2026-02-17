@@ -212,6 +212,46 @@ img {
     line-height: 0.95;
     letter-spacing: 0.01em;
     text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.statement-sub {
+    font-family: var(--font-body);
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    color: var(--color-text-light);
+    max-width: 800px;
+    margin-bottom: 60px;
+    line-height: 1.4;
+    font-weight: 300;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    border-top: 1px solid rgba(255, 245, 0, 0.2);
+    padding-top: 40px;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-number {
+    font-family: var(--font-display);
+    font-size: clamp(3rem, 6vw, 5rem);
+    color: var(--color-accent);
+    line-height: 1;
+}
+
+.stat-label {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-top: 8px;
 }
 
 /* --- About Section --- */
@@ -633,6 +673,11 @@ img {
 
     .statement-inner {
         padding: 0 24px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
     }
 
     .logo-img {
